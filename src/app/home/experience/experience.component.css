@@ -1,0 +1,104 @@
+h4,
+h5 {
+    color: var(--text-color);
+}
+
+h5 {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.jobs .jobs-tabs ul {
+    display: block;
+    width: 114.33px;
+    border: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    cursor: pointer;
+}
+
+.jobs .jobs-tabs li {
+    border-left: 2px solid #303C55;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #303c55;
+}
+
+.jobs .jobs-tabs a.active {
+    background-color: #112240 !important;
+    /* color: #64ffda !important; */
+    border-color: transparent !important;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border-color: var(--border-color);
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+p::before {
+    content: "\25b9";
+    position: absolute;
+    top: 0.40rem;
+    left: 0;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    line-height: 0.75rem;
+}

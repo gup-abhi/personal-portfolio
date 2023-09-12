@@ -1,0 +1,139 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    min-height: 20rem;
+    min-width: 20rem;
+    height: 25rem;
+    width: 35rem;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    transform: perspective(5000px) rotateY(var(--rotateY)) rotateX(var(--rotateX));
+    border-radius: 1rem;
+    transform-style: preserve-3d;
+}
+
+
+/* .content>* {
+    text-shadow: 0 0 0.3em var(--accent-color);
+} */
+
+.content::before,
+.content::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+.content::before {
+    inset: 0.75rem;
+    background: black;
+    transform: translateZ(-49px);
+    filter: blur(15px);
+    opacity: 0.5;
+}
+
+.content::after {
+    inset: -1rem;
+    background: linear-gradient(-45deg, red, blue);
+    transform: translateZ(-50px);
+}
+
+#name {
+    font-size: 2.5rem;
+}
+
+#role,
+#hobby {
+    font-size: 1.25rem;
+}
+
+.image-div {
+    height: 15rem;
+    width: 25rem;
+    clip-path: circle(35% at 50% 50%);
+    position: relative;
+    background: url("../../../assets/GSA-13-min.jpg");
+}
+
+.image {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+
+/* .image-div::before,
+.image-div::after {
+    content: "";
+    position: absolute;
+    inset: -0.25rem;
+    background: conic-gradient(from var(--gradient-angle), red, blue, red);
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+    z-index: -1;
+}
+
+.image-div::after {
+    filter: blur(0.5rem);
+} */
+
+@keyframes rotation {
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+
+.neon-wrapper {
+    display: inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+}
+
+.txt {
+    background-color: var(--bg-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.txt::before {
+    content: "I am Abhishek Gupta.";
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(0.075rem);
+}
+
+.gradient {
+    background: linear-gradient(45deg, red, blue);
+    background-size: 400%;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    animation: text-gradient 15s alternate infinite;
+}
+
+@keyframes text-gradient {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}

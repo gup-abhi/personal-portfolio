@@ -1,0 +1,16 @@
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 50%;
+    background-color: var(--border-color);
+    opacity: 0.3;
+    height: 0.05rem;
+    margin-left: 0.625rem;
+}

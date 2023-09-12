@@ -1,0 +1,57 @@
+p {
+    font-size: 1.125rem;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    overflow: hidden;
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+}
+
+li {
+    position: relative;
+    margin-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    font-size: 0.8125rem;
+    cursor: pointer;
+}
+
+li::before {
+    content: "\25b9";
+    position: absolute;
+    top: 0.25rem;
+    left: 0;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    line-height: 0.75rem;
+}
+
+.underline {
+    position: relative;
+    padding-bottom: 0.625rem;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid var(--text-color);
+    height: 1px;
+    width: 0%;
+    bottom: 3px;
+    display: block;
+    left: 50%;
+    transition: width 0.3s ease 0s, left .3s ease 0s;
+}
+
+.underline:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.tryhackme-img {
+    height: 8rem;
+    width: 30rem;
+}

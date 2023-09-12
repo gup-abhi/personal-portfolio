@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --bg-color: #000000;
+    --text-color: #FFFFFF;
+    --border-color: #CCCCCC;
+    --icon-button-color: #FFFFFF;
+    --accent-color: #FF0000;
+    --shadow-color: #333333;
+    --shadow-elevation: 0px 0.8px 0.9px var(--shadow-color), 0.1px 2.7px 3px -0.8px var(--shadow-color), 0.1px 6.8px 7.7px -1.7px var(--shadow-color), 0.3px 16.6px 18.7px -2.5px var(--shadow-color);
+}
+
+html {
+    color-scheme: dark light;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+svg,
+picture {
+    display: block;
+    max-width: 100%;
+}
