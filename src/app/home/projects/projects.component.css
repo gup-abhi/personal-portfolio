@@ -2,7 +2,7 @@
     box-shadow: 0 0.625rem 1.875rem -0.9375rem var(--shadow-color);
     position: relative;
     z-index: 2;
-    padding: 1.5625rem;
+    /* padding: 1.5625rem; */
     background-color: var(--bg-color);
     color: var(--text-color);
     font-size: 1.125rem;
