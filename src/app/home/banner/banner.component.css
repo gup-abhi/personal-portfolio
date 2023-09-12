@@ -63,7 +63,7 @@
     width: 25rem;
     clip-path: circle(35% at 50% 50%);
     position: relative;
-    background: url("../../../assets/GSA-13-min.jpg");
+    /* background: url("../../../assets/GSA-13-min.jpg"); */
 }
 
 .image {
