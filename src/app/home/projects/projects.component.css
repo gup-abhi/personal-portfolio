@@ -1,0 +1,52 @@
+.project-description {
+    box-shadow: 0 0.625rem 1.875rem -0.9375rem var(--shadow-color);
+    position: relative;
+    z-index: 2;
+    padding: 1.5625rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.125rem;
+    border-radius: 0.1875rem;
+}
+
+.featured-project-heading {
+    color: var(--accent-color);
+    opacity: 0.8;
+}
+
+.project-skills {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1.5625rem 0 0.625rem;
+    list-style: none;
+}
+
+.underline {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: var(--text-color) !important;
+    padding-bottom: 0.3125rem;
+    cursor: pointer;
+}
+
+.underline::after {
+    /* background: none repeat scroll 0 0 transparent; */
+    bottom: 0.1875rem;
+    content: "";
+    display: block;
+    height: 0.0625rem;
+    left: 50%;
+    position: absolute;
+    background: var(--text-color);
+    transition: width .3s ease 0s, left .3s ease 0s;
+    width: 0%;
+}
+
+.underline:hover::after {
+    width: 100%;
+    left: 0;
+}

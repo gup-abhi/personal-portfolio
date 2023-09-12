@@ -10,6 +10,7 @@ export class HeadingService {
     '/about-me': "01. About Me",
     '/experience': "02. Experience",
     '/': "",
+    '/projects': "03. Projects that I was a part of"
   }
   constructor() { }
 

@@ -6,6 +6,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EffectDirectiveDirective } from '../shared/directive/effect-directive.directive';
 import { SharedModule } from '../shared/shared.module';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 
@@ -13,7 +14,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
   declarations: [
     BannerComponent,
     ExperienceComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,
