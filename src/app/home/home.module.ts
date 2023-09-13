@@ -7,6 +7,7 @@ import { EffectDirectiveDirective } from '../shared/directive/effect-directive.d
 import { SharedModule } from '../shared/shared.module';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -15,7 +16,8 @@ import { ProjectsComponent } from './projects/projects.component';
     BannerComponent,
     ExperienceComponent,
     AboutMeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

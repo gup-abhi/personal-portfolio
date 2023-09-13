@@ -6,3 +6,16 @@ nav {
     background-color: var(--bg-color);
     z-index: 9999;
 }
+
+.neon-button {
+    font-size: 1rem;
+}
+
+.navbar .neon-button {
+    color: var(--accent-color);
+}
+
+.navbar .neon-button:hover,
+.navbar .neon-button:focus-visible {
+    color: var(--bg-color);
+}
