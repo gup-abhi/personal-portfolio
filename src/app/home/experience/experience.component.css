@@ -4,11 +4,11 @@ h4 {
 
 h5 {
     font-size: 1rem;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     color: var(--accent-color);
 }
 
-.jobs .jobs-tabs ul {
+.jobs-tabs ul {
     display: block;
     width: 114.33px;
     border: none;
@@ -33,16 +33,16 @@ a {
     cursor: pointer;
 }
 
-.jobs .jobs-tabs li {
-    border-left: 2px solid #303C55;
+.jobs-tabs li {
+    border-left: 2px solid var(--accent-color);
     border-left-width: 2px;
     border-left-style: solid;
-    border-left-color: #303c55;
+    border-left-color: var(--accent-color);
 }
 
-.jobs .jobs-tabs a.active {
-    background-color: #112240 !important;
-    /* color: #64ffda !important; */
+.jobs-tabs a.active {
+    background-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
     border-color: transparent !important;
     border-radius: 0;
 }
