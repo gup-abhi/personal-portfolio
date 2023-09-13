@@ -55,8 +55,21 @@
 
 .content::after {
     inset: -1rem;
-    background: linear-gradient(-45deg, red, blue);
+    background: conic-gradient(from var(--gradient-angle), red, orange, red);
     transform: translateZ(-50px);
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+    z-index: -1;
+    filter: blur(0.5rem);
+}
+
+@keyframes rotation {
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
 }
 
 #name {
@@ -82,31 +95,6 @@
     border-radius: inherit;
 }
 
-
-/* .image-div::before,
-.image-div::after {
-    content: "";
-    position: absolute;
-    inset: -0.25rem;
-    background: conic-gradient(from var(--gradient-angle), red, blue, red);
-    border-radius: inherit;
-    animation: rotation 20s linear infinite;
-    z-index: -1;
-}
-
-.image-div::after {
-    filter: blur(0.5rem);
-} */
-
-@keyframes rotation {
-    0% {
-        --gradient-angle: 0deg;
-    }
-    100% {
-        --gradient-angle: 360deg;
-    }
-}
-
 .neon-wrapper {
     display: inline-flex;
     filter: brightness(200%);
@@ -127,7 +115,7 @@
 }
 
 .gradient {
-    background: linear-gradient(45deg, red, blue);
+    background: linear-gradient(45deg, red, orange);
     background-size: 400%;
     background-position: left;
     position: absolute;
