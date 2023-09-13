@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-experience',
@@ -11,7 +10,6 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    AOS.init();
   }
 
   selectedTab(value: String) {

@@ -21,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    HomeRoutingModule
   ],
   exports: [
     BannerComponent,

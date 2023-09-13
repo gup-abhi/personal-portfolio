@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HeadingService } from './shared/services/heading.service';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'my-portfolio';
+  title = 'Abhishek Gupta';
 
   constructor(private headingService: HeadingService, private router: Router) { 
     this.router.events.subscribe((event) => {
@@ -20,5 +21,7 @@ export class AppComponent implements OnInit{
     });
   }
 
-  ngOnInit() {  }
+  ngOnInit() { 
+    AOS.init();
+   }
 }
