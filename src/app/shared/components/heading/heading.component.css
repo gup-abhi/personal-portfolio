@@ -9,8 +9,8 @@ h3::after {
     position: absolute;
     top: 60%;
     width: 50%;
-    background-color: var(--border-color);
-    opacity: 0.3;
-    height: 0.05rem;
+    background-color: var(--accent-color);
+    opacity: 0.5;
+    height: 0.08rem;
     margin-left: 0.625rem;
 }

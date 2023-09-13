@@ -41,3 +41,7 @@ picture {
     display: block;
     max-width: 100%;
 }
+
+a:hover {
+    color: var(--accent-color);
+}

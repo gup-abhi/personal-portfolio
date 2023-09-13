@@ -37,7 +37,7 @@ li::before {
 .underline::after {
     content: "";
     position: absolute;
-    border-bottom: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
     height: 1px;
     width: 0%;
     bottom: 3px;

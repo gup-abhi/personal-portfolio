@@ -41,7 +41,7 @@
     height: 0.0625rem;
     left: 50%;
     position: absolute;
-    background: var(--text-color);
+    background: var(--accent-color);
     transition: width .3s ease 0s, left .3s ease 0s;
     width: 0%;
 }
