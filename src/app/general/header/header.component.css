@@ -39,3 +39,7 @@ nav {
 .navbar-dark .navbar-nav .show>.nav-link {
     color: var(--accent-color);
 }
+
+.navbar-toggler {
+    border: 1px solid var(--accent-color);
+}
