@@ -1,6 +1,7 @@
 :host {
     cursor: move;
     min-height: inherit;
+    --gradient-angle: 0deg;
 }
 
 .main-container,
@@ -54,7 +55,7 @@
 }
 
 .content::after {
-    inset: -1rem;
+    inset: -1.5rem;
     background: conic-gradient(from var(--gradient-angle), red, orange, red);
     transform: translateZ(-50px);
     border-radius: inherit;
