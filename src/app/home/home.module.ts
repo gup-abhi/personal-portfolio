@@ -8,6 +8,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { EducationComponent } from './education/education.component';
 
 
 
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     ExperienceComponent,
     AboutMeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    EducationComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,44 @@
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-lg-2"></div>
+        <div class="col col-lg-8 h-100">
+            <app-heading></app-heading>
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-12 col-lg-3 m-0 mb-2">
+                        <ul class="nav-tabs education-tabs nav flex-column">
+                            <li>
+                                <a class="nav-link" [ngClass]="{'active': tab === 'Master'}" (click)="selectedTab('Master')">Master's</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" [ngClass]="{'active': tab === 'Bachelor'}" (click)="selectedTab('Bachelor')">Bachelor's</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div *ngIf="tab === 'Master'" class="col-12 col-lg" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>Master of Applied Computer Science | Concordia University</h4>
+                        <h5>September, 2022 - August, 2024</h5>
+                        <p>
+                            Credits earned: 25
+                        </p>
+                        <p>
+                            Relevant Courses: Algorithm Design Techniques, Distributed System Design, Computer Networks, Software Design Methodologies, Theory of Computer Science
+                        </p>
+                    </div>
+
+                    <div *ngIf="tab === 'Bachelor'" class="col-12 col-lg" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>B. Tech in Software Engineering | SRM Institute of Science And Technology</h4>
+                        <h5>July, 2016 - June, 2020</h5>
+                        <p>
+                            GPA: 3.32
+                        </p>
+                        <p>
+                            Relevant Courses: Algorithm Design, Data Structures, Computer Networks, Software Engineering, Requirement Engineering, C++, Java, Python, Web Development, SOftware Architecture Design, Agile Methodologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+</div>

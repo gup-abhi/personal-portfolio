@@ -9,9 +9,10 @@ export class HeadingService {
   urlHeadingMap: { [key: string]: any } = {
     '/about-me': "01. About Me",
     '/experience': "02. Experience",
+    '/education': "03. Education",
+    '/projects': "04. Projects",
+    '/contact': "05. Contact",
     '/': "",
-    '/projects': "03. Projects",
-    '/contact': "04. Contact"
   }
   constructor() { }
 

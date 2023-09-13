@@ -8,7 +8,7 @@ h5 {
     color: var(--accent-color);
 }
 
-.jobs-tabs ul {
+.education-tabs ul {
     display: block;
     width: 114.33px;
     border: none;
@@ -33,14 +33,14 @@ a {
     cursor: pointer;
 }
 
-.jobs-tabs li {
+.education-tabs li {
     border-left: 2px solid var(--accent-color);
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: var(--accent-color);
 }
 
-.jobs-tabs a.active {
+.education-tabs a.active {
     background-color: var(--accent-color) !important;
     color: var(--text-color) !important;
     border-color: transparent !important;
@@ -49,7 +49,7 @@ a {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
-    color: var(--text-color);
+    color: var(--accent-color);
     background-color: var(--bg-color);
 }
 
@@ -62,6 +62,11 @@ a {
     border: 0.25rem solid var(--border-color);
 }
 
+.nav-tabs .nav-link:focus-visible,
+.nav-tabs .nav-link:hover {
+    border-color: var(--accent-color);
+}
+
 .nav-tabs .nav-link {
     margin-bottom: -1px;
     /* border: 1px solid transparent;
@@ -71,11 +76,6 @@ a {
     border-left-color: transparent; */
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-}
-
-.nav-tabs .nav-link:focus-visible,
-.nav-tabs .nav-link:hover {
-    border-color: var(--accent-color);
 }
 
 .nav-link {
