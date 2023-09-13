@@ -69,8 +69,6 @@
 }
 
 .image-div {
-    min-height: 10rem;
-    min-width: 20rem;
     height: 15rem;
     width: 25rem;
     clip-path: circle(35% at 50% 50%);
@@ -147,5 +145,32 @@
     }
     100% {
         background-position: right;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .inner-content {
+        height: 25rem;
+        width: 17rem;
+    }
+    .image-div {
+        height: 10rem;
+        width: 13rem;
+        clip-path: circle(35% at 45% 50%);
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .inner-content {
+        width: 17rem;
+    }
+    .image-div {
+        height: 10rem;
     }
 }
