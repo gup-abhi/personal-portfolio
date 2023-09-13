@@ -1,5 +1,11 @@
 :host {
     cursor: move;
+    min-height: inherit;
+}
+
+.main-container,
+.row {
+    min-height: inherit;
 }
 
 @property --gradient-angle {
@@ -63,6 +69,8 @@
 }
 
 .image-div {
+    min-height: 10rem;
+    min-width: 20rem;
     height: 15rem;
     width: 25rem;
     clip-path: circle(35% at 50% 50%);
