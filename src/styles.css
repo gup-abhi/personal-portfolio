@@ -111,3 +111,25 @@ a:hover {
 
 
 /* Neon Button styling END */
+
+/* ScrollBar customization START */
+body::-webkit-scrollbar {
+    width: 0.75rem;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    /* color of the scroll thumb */
+    border-radius: 1.25rem;
+    /* roundness of the scroll thumb */
+    border: 3px solid transparent;
+    /* creates padding around scroll thumb */
+}
+
+/* \scrollBar customization END */

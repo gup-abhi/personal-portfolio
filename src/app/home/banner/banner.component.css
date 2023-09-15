@@ -55,7 +55,7 @@
 }
 
 .content::after {
-    inset: -1.5rem;
+    inset: -1rem;
     background: conic-gradient(from var(--gradient-angle), red, orange, red);
     transform: translateZ(-50px);
     border-radius: inherit;
