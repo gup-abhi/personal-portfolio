@@ -7,12 +7,13 @@ import { HeadingService } from '../../services/heading.service';
   styleUrls: ['./heading.component.css']
 })
 export class HeadingComponent implements OnInit {
-  heading: String = ''; 
+  heading: any = {}; 
   constructor(private service: HeadingService) { }
 
   ngOnInit(): void {
     this.service.getValue().subscribe((heading) => {
       this.heading = heading;
+      console.log(`this.heading - ${JSON.stringify(this.heading)}`)
     });
   }
 }

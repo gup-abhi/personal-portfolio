@@ -42,9 +42,10 @@ a {
 
 .jobs-tabs a.active {
     background-color: var(--accent-color) !important;
-    color: var(--text-color) !important;
+    color: var(--bg-color) !important;
     border-color: transparent !important;
     border-radius: 0;
+    font-weight: bolder;
 }
 
 .nav-tabs .nav-item.show .nav-link,

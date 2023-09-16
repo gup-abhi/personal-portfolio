@@ -14,3 +14,7 @@ h3::after {
     height: 0.08rem;
     margin-left: 0.625rem;
 }
+
+.title-number {
+    color: var(--accent-color);
+}

@@ -7,12 +7,27 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 export class HeadingService {
   heading = new BehaviorSubject<String>('');
   urlHeadingMap: { [key: string]: any } = {
-    '/about-me': "01. About Me",
-    '/experience': "02. Experience",
-    '/education': "03. Education",
-    '/projects': "04. Projects",
-    '/contact': "05. Contact",
-    '/': "",
+    '/about-me': {
+      "num": "01. ",
+      "title": "About Me"
+    },
+    '/experience': {
+      "num": "02. ",
+      "title": "Experience"
+    },
+    '/education': {
+      "num": "03. ",
+      "title": "Education"
+    },
+    '/projects': {
+      "num": "04. ",
+      "title": "Projects"
+    },
+    '/contact': {
+      "num": "05. ",
+      "title": "Contact"
+    },
+    '/': {},
   }
   constructor() { }
 

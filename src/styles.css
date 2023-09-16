@@ -1,14 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    --bg-color: #000000;
+    /* --bg-color: #000000;
     --text-color: #FFFFFF;
     --border-color: #CCCCCC;
     --icon-button-color: #FFFFFF;
-    --accent-color: #FF6B6B; /* Coral Red */
+    --accent-color: #FF6B6B;
     --shadow-color: #333333;
-    --gradient-color-1: #FF6B6B; /* Coral Red */
-    --gradient-color-2: #3498db; /* Subtle Blue (from your existing scheme) */
+    --gradient-color-1: #FF6B6B;
+    --gradient-color-2: #3498db;  */
+
+    --bg-color: #000000; /* Black */
+    --text-color: #FFFFFF; /* White */
+    --border-color: #333333; /* Dark Gray */
+    --icon-button-color: #FFFFFF; /* White */
+    --accent-color: #FFD700; /* Gold */
+    --shadow-color: #555555; /* Medium Gray */
+    --gradient-color-1: #FFD700; /* Gold */
+    --gradient-color-2: #C0C0C0;; /* Dark Gray */
     --shadow-elevation: 0px 0.8px 0.9px var(--shadow-color), 0.1px 2.7px 3px -0.8px var(--shadow-color), 0.1px 6.8px 7.7px -1.7px var(--shadow-color), 0.3px 16.6px 18.7px -2.5px var(--shadow-color);
 }
 

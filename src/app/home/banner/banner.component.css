@@ -112,7 +112,7 @@
     content: "I am Abhishek Gupta.";
     position: absolute;
     mix-blend-mode: difference;
-    filter: blur(0.075rem);
+    filter: blur(0.025rem);
 }
 
 .gradient {
