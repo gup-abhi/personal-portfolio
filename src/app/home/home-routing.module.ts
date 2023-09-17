@@ -23,7 +23,7 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled', enableTracing: true })
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })
   ],
   exports: [RouterModule]
 })

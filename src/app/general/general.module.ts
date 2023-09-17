@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeModule } from '../home/home.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -13,7 +14,8 @@ import { HomeModule } from '../home/home.module';
   ],
   imports: [
     CommonModule,
-    HomeModule
+    HomeModule,
+    SharedModule
   ],
   exports: [
     HeaderComponent,
