@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  downloadFile() {
+    saveAs("./assets/Resume.pdf", "Abhishek_Gupta.pdf");
+  }
 }
