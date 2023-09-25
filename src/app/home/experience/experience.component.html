@@ -8,7 +8,7 @@
                     <div class="col-12 col-lg-3 m-0 mb-2">
                         <ul class="nav-tabs jobs-tabs nav flex-column">
                             <li>
-                                <a class="nav-link" [ngClass]="{'active': tab === 'TCS'}" (click)="selectedTab('TCS')">TCS</a>
+                                <a class="nav-link" [ngClass]="{'active': tab === 'TCS'}" (click)='selectedTab("TCS"); googleAnalytics.sendAnalyticEvent("click_button", "experience", "tcs-button")'>TCS</a>
                             </li>
                             <!-- <li>
                                 <a class="nav-link" [ngClass]="{'active': tab === 'Google'}" (click)="selectedTab('Google')">Google</a>

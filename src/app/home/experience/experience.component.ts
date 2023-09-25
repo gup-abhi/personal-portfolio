@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnalyticsService } from 'src/app/shared/services/analytics.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
   tab: String = "TCS";
-  constructor() { }
+  constructor(public googleAnalytics: AnalyticsService) { }
 
   ngOnInit(): void {
   }

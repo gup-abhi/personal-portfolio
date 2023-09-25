@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { saveAs } from 'file-saver';
+import { AnalyticsService } from 'src/app/shared/services/analytics.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { saveAs } from 'file-saver';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public googleAnalytics: AnalyticsService) { }
 
   ngOnInit(): void {
   }

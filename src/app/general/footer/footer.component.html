@@ -4,18 +4,18 @@
             <div [@animateFooter]>
                 <ul class="footer-left-bar d-none d-md-block">
                     <li>
-                        <a href="https://github.com/gup-abhi" target='_blank'>
+                        <a (click)='googleAnalytics.sendAnalyticEvent("click_button", "footer", "github-button")' href="https://github.com/gup-abhi" target='_blank'>
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/abhishekguptadelhi/" target='_blank'>
+                        <a (click)='googleAnalytics.sendAnalyticEvent("click_button", "footer", "linkedin-button")' href="https://www.linkedin.com/in/abhishekguptadelhi/" target='_blank'>
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                 </ul>
                 <div class="footer-right-bar d-none d-md-block">
-                    <a href="mailto:agupta.engineer.email@gmail.com" target='_blank'>agupta.engineer.email@gmail.com </a>
+                    <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "footer", "mail-link")' href="mailto:agupta.engineer.email@gmail.com" target='_blank'>agupta.engineer.email@gmail.com </a>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
 
     <div class="row">
         <div class="col-12 footer-credits text-center p-2">
-            <a href="https://github.com/gup-abhi" target="_blank" rel="nofollow noopener noreferrer">
+            <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "footer", "github-link")' href="https://github.com/gup-abhi" target="_blank" rel="nofollow noopener noreferrer">
                 Design and Built with Angular by Abhishek Gupta
             </a>
         </div>

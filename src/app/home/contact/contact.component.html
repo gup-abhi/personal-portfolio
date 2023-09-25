@@ -14,7 +14,7 @@
             </p>
             <div class="container p-3">
                 <div class="row justify-content-center">
-                    <a href="mailto:agupta.engineer.email@gmail.com" target='_blank' class="neon-button">Say Hello</a>
+                    <a (click)='googleAnalytics.sendAnalyticEvent("click_button", "contact", "contact-button")' href="mailto:agupta.engineer.email@gmail.com" target='_blank' class="neon-button">Say Hello</a>
                 </div>
             </div>
         </div>

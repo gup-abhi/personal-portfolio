@@ -1,6 +1,6 @@
 <nav appIntersectionObserver class="navbar navbar-expand-lg sticky-top navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" routerLinkActive="active">
+        <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "header", "home-link")' class="navbar-brand" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="" routerLinkActive="active">
             Abhishek
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,12 +9,12 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <!-- <a class="nav-link active" aria-current="page" routerLink="" routerLinkActive="active">Home</a> -->
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="about-me" routerLinkActive="active">01. About Me</a>
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="experience" routerLinkActive="active">02. Experience</a>
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="education" routerLinkActive="active">03. Education</a>
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="projects" routerLinkActive="active">04. Projects</a>
-                <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="contact" routerLinkActive="active">05. Contact</a>
-                <a (click)="downloadFile()" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="neon-button">Resume</a>
+                <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "header", "about-me-link")' class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="about-me" routerLinkActive="active">01. About Me</a>
+                <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "header", "experience-link")' class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="experience" routerLinkActive="active">02. Experience</a>
+                <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "header", "education-link")' class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="education" routerLinkActive="active">03. Education</a>
+                <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "header", "projects-link")'class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="projects" routerLinkActive="active">04. Projects</a>
+                <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "header", "contact-link")' class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="contact" routerLinkActive="active">05. Contact</a>
+                <a (click)='downloadFile(); googleAnalytics.sendAnalyticEvent("click_button", "header", "resume-button")' data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="neon-button">Resume</a>
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GeneralModule,
     HomeModule,
     NgbModule,
-    SharedModule
+    SharedModule,
+    NgxGoogleAnalyticsModule.forRoot('G-LQB72FRTH9')
   ],
   providers: [],
   exports: [],

@@ -9,6 +9,7 @@ import {
 import * as AOS from 'aos';
 import { Title } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
+import { AnalyticsService } from './shared/services/analytics.service';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ export class AppComponent implements OnInit {
     private headingService: HeadingService,
     private router: Router,
     private titleService: Title,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private googleAnalytics: AnalyticsService
   ) {
     this.handleRouteEvents();
     this.router.events.subscribe((event) => {
@@ -48,11 +50,13 @@ export class AppComponent implements OnInit {
         this.titleService.setTitle(title);
 
         console.log(`page_title - ${title} :: page_path - ${event.urlAfterRedirects} :: page_location - ${this.document.location.href}`);
-        gtag('event', 'page_view', {
-          page_title: title,
-          page_path: event.urlAfterRedirects,
-          page_location: this.document.location.href,
-        });
+        // gtag('event', 'page_view', {
+        //   page_title: title,
+        //   page_path: event.urlAfterRedirects,
+        //   page_location: this.document.location.href,
+        // });
+
+        this.googleAnalytics.sendAnalyticPageView(event.urlAfterRedirects, title);
       }
     });
   }
