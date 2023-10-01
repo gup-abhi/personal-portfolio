@@ -1,15 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    /* --bg-color: #000000;
-    --text-color: #FFFFFF;
-    --border-color: #CCCCCC;
-    --icon-button-color: #FFFFFF;
-    --accent-color: #FF6B6B;
-    --shadow-color: #333333;
-    --gradient-color-1: #FF6B6B;
-    --gradient-color-2: #3498db;  */
-
     --bg-color: #000000; /* Black */
     --text-color: #FFFFFF; /* White */
     --border-color: #333333; /* Dark Gray */
