@@ -31,7 +31,6 @@ body {
     width: 100%;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: "Trirong", serif;
 }
 
 *,
@@ -60,6 +59,10 @@ a:hover {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: "Young Serif";
+}
+
+a, p, ul, li{
+    font-family: "Trirong", serif;
 }
 
 
