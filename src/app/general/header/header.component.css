@@ -49,6 +49,6 @@ nav {
 }
 
 .nav-shadow {
-    box-shadow: 0 10px 30px -10px var(--shadow-color);
+    box-shadow: 0 10px 30px -10px var(--gradient-color-2);
     transition: box-shadow 500ms;
 }
