@@ -54,3 +54,11 @@
 .project-image {
     height: 100%;
 }
+
+.tag-list {
+    display: flex;
+}
+
+.tag-list li {
+    flex-wrap: wrap;
+}
