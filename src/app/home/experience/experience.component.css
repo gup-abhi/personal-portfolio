@@ -104,7 +104,7 @@ p::before {
     position: absolute;
     top: 0.40rem;
     left: 0;
-    color: var(--text-color);
+    color: var(--accent-color);
     font-size: 0.875rem;
     line-height: 0.75rem;
 }
