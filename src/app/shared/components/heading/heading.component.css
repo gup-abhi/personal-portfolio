@@ -10,8 +10,8 @@ h3::after {
     top: 60%;
     width: 50%;
     background-color: var(--accent-color);
-    opacity: 0.5;
-    height: 0.08rem;
+    opacity: 0.8;
+    height: 0.1rem;
     margin-left: 0.625rem;
 }
 

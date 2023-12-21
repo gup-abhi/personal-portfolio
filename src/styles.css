@@ -155,10 +155,10 @@ body::-webkit-scrollbar-thumb {
     color: var(--bg-color);
     border-radius: 0.25rem;
     box-shadow: 0 0.5rem 1rem -0.25rem var(--shadow-color);
-    font-weight: bold;
+    font-weight: bolder;
     padding-block: 0.125rem;
     padding-inline: 0.25rem;
-    font-size: 0.8125rem;
+    font-size: 0.95rem;
 }
 /* Infinite scroll Tag List END */
 
