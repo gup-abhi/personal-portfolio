@@ -5,5 +5,5 @@
 
 .page-content {
     /* padding: 1.25rem; */
-    min-height: inherit;
+    min-height: calc(100vh - 8rem);
 }
