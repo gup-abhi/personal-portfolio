@@ -9,6 +9,7 @@
   --shadow-color: #555555; /* Medium Gray */
   --gradient-color-1: #ffd700; /* Gold */
   --gradient-color-2: #c0c0c0; /* Dark Gray */
+  --gradient-color-3: #87ceeb; /* Sky Blue */
   --shadow-elevation: 0px 0.8px 0.9px var(--shadow-color),
     0.1px 2.7px 3px -0.8px var(--shadow-color),
     0.1px 6.8px 7.7px -1.7px var(--shadow-color),
@@ -27,9 +28,9 @@ body {
   color: var(--text-color);
 }
 
-*,
-*::before,
-*::after {
+*:not(i),
+*::before:not(i),
+*::after:not(i) {
   box-sizing: border-box;
   color: var(--text-color);
 }

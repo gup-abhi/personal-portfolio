@@ -10,8 +10,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 
-
-
 @NgModule({
   declarations: [
     BannerComponent,
@@ -19,16 +17,17 @@ import { EducationComponent } from './education/education.component';
     AboutMeComponent,
     ProjectsComponent,
     ContactComponent,
-    EducationComponent
+    EducationComponent,
   ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    HomeRoutingModule
-  ],
+  imports: [CommonModule, SharedModule, HomeRoutingModule],
   exports: [
     BannerComponent,
-    HomeRoutingModule
-  ]
+    HomeRoutingModule,
+    AboutMeComponent,
+    ProjectsComponent,
+    ContactComponent,
+    EducationComponent,
+    ExperienceComponent,
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}

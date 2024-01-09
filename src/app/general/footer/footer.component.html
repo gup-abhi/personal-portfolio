@@ -1,31 +1,73 @@
 <footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div [@animateFooter]>
-                <ul class="footer-left-bar d-none d-md-block">
-                    <li>
-                        <a (click)='googleAnalytics.sendAnalyticEvent("click_button", "footer", "github-button")' href="https://github.com/gup-abhi" target='_blank'>
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a (click)='googleAnalytics.sendAnalyticEvent("click_button", "footer", "linkedin-button")' href="https://www.linkedin.com/in/gup-abhi/" target='_blank'>
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                </ul>
-                <div class="footer-right-bar d-none d-md-block">
-                    <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "footer", "mail-link")' href="mailto:gupabhi20@gmail.com" target='_blank'>gupabhi20@gmail.com </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-12 footer-credits text-center p-2">
-            <a (click)='googleAnalytics.sendAnalyticEvent("click_anchor", "footer", "github-link")' href="https://github.com/gup-abhi" target="_blank" rel="nofollow noopener noreferrer">
-                Design and Built with Angular by Abhishek Gupta
+      <div [@animateFooter]>
+        <ul class="footer-left-bar d-none d-md-block">
+          <li>
+            <a
+              (click)="
+                googleAnalytics.sendAnalyticEvent(
+                  'click_button',
+                  'footer',
+                  'github-button'
+                )
+              "
+              href="https://github.com/gup-abhi"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
             </a>
+          </li>
+          <li>
+            <a
+              (click)="
+                googleAnalytics.sendAnalyticEvent(
+                  'click_button',
+                  'footer',
+                  'linkedin-button'
+                )
+              "
+              href="https://www.linkedin.com/in/gup-abhi/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-right-bar d-none d-md-block">
+          <a
+            (click)="
+              googleAnalytics.sendAnalyticEvent(
+                'click_anchor',
+                'footer',
+                'mail-link'
+              )
+            "
+            href="mailto:gupabhi20@gmail.com"
+            target="_blank"
+            >gupabhi20@gmail.com
+          </a>
         </div>
+      </div>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 footer-credits text-center p-2">
+      <a
+        (click)="
+          googleAnalytics.sendAnalyticEvent(
+            'click_anchor',
+            'footer',
+            'github-link'
+          )
+        "
+        href="https://github.com/gup-abhi"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
+        Design and Built with Angular by Abhishek Gupta
+      </a>
+    </div>
+  </div>
 </footer>

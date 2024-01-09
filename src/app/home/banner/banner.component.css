@@ -1,5 +1,5 @@
 :host {
-  cursor: move;
+  /* cursor: move; */
   min-height: inherit;
   --gradient-angle: 0deg;
 }
@@ -54,18 +54,20 @@
 }
 
 .content::after {
-  inset: -1.25rem;
+  inset: -0.75rem;
   background: conic-gradient(
     from var(--gradient-angle),
     var(--gradient-color-1),
+    var(--gradient-color-2),
+    var(--gradient-color-3),
     var(--gradient-color-2),
     var(--gradient-color-1)
   );
   transform: translateZ(-50px);
   border-radius: inherit;
-  animation: rotation 20s linear infinite;
+  animation: rotation 10s linear infinite;
   z-index: -1;
-  filter: blur(0.5rem);
+  filter: blur(1rem);
 }
 
 @keyframes rotation {
@@ -78,12 +80,13 @@
 }
 
 #name {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 #role,
 #hobby {
   font-size: 1.25rem;
+  /* text-shadow: 2px 2px 10px var(--accent-color); */
 }
 
 .image-div {
@@ -157,6 +160,10 @@
     width: 13rem;
     clip-path: circle(35% at 45% 50%);
   }
+
+  #name {
+    font-size: 1.5rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -167,5 +174,15 @@
   }
   .image-div {
     height: 10rem;
+  }
+
+  #name {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  #name {
+    font-size: 1.75rem;
   }
 }
