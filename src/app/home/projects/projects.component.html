@@ -11,67 +11,111 @@
   >
     <div class="container-fluid p-0 pr-3">
       <div class="row">
+        <div class="col-12 col-lg-3 offset-lg-9">
+          <h5 class="featured-project-heading text-lg-right">
+            Featured Project
+          </h5>
+          <h4 class="text-lg-right">Expense Tracker</h4>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-6">
+      <img
+        src="./assets/expense-tracker.png"
+        alt="project-image-1"
+        class="project-image"
+      />
+    </div>
+    <div class="col-12 col-lg-6 project-description p-0">
+      <p class="p-2 m-0">
+        The project is an Expense Tracker developed using the PERN stack, which
+        stands for PostgreSQL, Express.js, React.js, and Node.js. This
+        application allows users to manage their expenses effectively. Users can
+        add expenses, providing a comprehensive way to track where their money
+        is going. The application also offers a monthly view of all expenses,
+        giving users a clear picture of their spending habits over time. One of
+        the key features of this application is the ability to visualize
+        expenses through a pie chart for each month. This graphical
+        representation provides users with an intuitive understanding of their
+        spending patterns, helping them make informed decisions about their
+        finances. Overall, this Expense Tracker is a powerful tool for personal
+        financial management.
+      </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-6 p-0">
+          <ul class="tag-list justify-content-lg-end mt-3 mb-3">
+            <li class="ml-3">React</li>
+            <li class="ml-3">Node</li>
+            <li class="ml-3">Express</li>
+            <li class="ml-3">PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-6 p-0">
+          <a
+            (click)="
+              googleAnalytics.sendAnalyticEvent(
+                'click_button',
+                'projects',
+                'link-button-1'
+              )
+            "
+            class="d-lg-flex justify-content-lg-end"
+            href="https://expense-tracker-server-ers4.onrender.com/"
+            target="_blank"
+          >
+            <i class="ml-3 fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="row m-0 mr-2 ml-2 mb-3"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
+    <div class="container-fluid p-0 pr-3">
+      <div class="row">
         <div class="col-12">
           <h5 class="featured-project-heading">Featured Project</h5>
-          <h4>Personal Portfolio</h4>
+          <h4>Todo App</h4>
         </div>
       </div>
     </div>
     <div class="col-12 col-lg-6 project-description p-0">
       <p class="p-2 m-0">
-        My Angular-based personal portfolio is more than just a collection of
-        projects and experiences; it's a visual journey that blends aesthetics
-        and animations to create an engaging and memorable user experience. As
-        you explore my portfolio, you'll be greeted with sleek design and
-        captivating animations that make the presentation of my work truly stand
-        out. Each project is presented with meticulous attention to detail,
-        providing visitors with a deep dive into my skills and accomplishments.
-        Additionally, my professional journey is brought to life through
-        interactive elements and engaging visuals, turning my portfolio into a
-        dynamic narrative rather than a static display. In essence, my Angular
-        portfolio is a testament to my commitment to combining form and function
-        in web development, making it an engaging showcase of my talents and
-        experiences.
+        The project is a To-Do application built using the PERN stack, which
+        includes PostgreSQL, Express.js, React.js, and Node.js. This application
+        provides users with a platform to manage their tasks effectively. Users
+        can create a to-do item, modify it as needed, and mark it as complete or
+        incomplete, providing a comprehensive task management system. One of the
+        significant features of this application is the inclusion of an
+        authentication system. This ensures that only authorized users have
+        access to their respective to-do lists, thereby enhancing the security
+        and personalization of the application. Overall, this To-Do application
+        serves as a robust tool for personal task management, promoting
+        productivity and organization.
       </p>
     </div>
     <div class="d-none d-lg-block col-lg-6">
       <img
-        src="./assets/personal-portfolio.png"
-        alt="project-image-1"
+        src="./assets/todo-app.png"
+        alt="project-image-2"
         class="project-image"
       />
     </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-6 p-0">
-          <!-- <ul class="project-skills justify-content-start">
-                        <li class="ml-3">
-                            <span class="underline">
-                                Angular
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                Bootstrap
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                HTML
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                CSS
-                            </span>
-                        </li>
-                    </ul> -->
-
           <ul class="tag-list justify-content-start mt-3 mb-3">
-            <li class="ml-3">Angular</li>
-            <li class="ml-3">BootStrap</li>
-            <li class="ml-3">HTML</li>
-            <li class="ml-3">CSS</li>
+            <li class="ml-3">React</li>
+            <li class="ml-3">Node</li>
+            <li class="ml-3">Express</li>
+            <li class="ml-3">PostgreSQL</li>
           </ul>
         </div>
       </div>
@@ -82,10 +126,10 @@
               googleAnalytics.sendAnalyticEvent(
                 'click_button',
                 'projects',
-                'link-button-1'
+                'link-button-2'
               )
             "
-            href="https://gup-abhi.github.io/personal-portfolio/"
+            href="https://todo-server-hqr6.onrender.com/"
             target="_blank"
           >
             <i class="ml-3 fas fa-external-link-alt"></i>
@@ -112,7 +156,7 @@
     <div class="d-none d-lg-block col-lg-6">
       <img
         src="./assets/top-250-movies.png"
-        alt="project-image-2"
+        alt="project-image-3"
         class="project-image"
       />
     </div>
@@ -133,29 +177,6 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-6 offset-lg-6 p-0">
-          <!-- <ul class="project-skills justify-content-lg-end">
-                        <li class="ml-3">
-                            <span class="underline">
-                                Angular
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                Node
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                Bootstrap
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                SQLite
-                            </span>
-                        </li>
-                    </ul> -->
-
           <ul class="tag-list justify-content-lg-end mt-3 mb-3">
             <li class="ml-3">Angular</li>
             <li class="ml-3">Node</li>
@@ -171,7 +192,7 @@
               googleAnalytics.sendAnalyticEvent(
                 'click_button',
                 'projects',
-                'link-button-2'
+                'link-button-3'
               )
             "
             class="d-lg-flex justify-content-lg-end"
@@ -217,36 +238,13 @@
     <div class="d-none d-lg-block col-lg-6">
       <img
         src="./assets/django-blog.png"
-        alt="project-image-3"
+        alt="project-image-4"
         class="project-image"
       />
     </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-6 p-0">
-          <!-- <ul class="project-skills justify-content-start">
-                        <li class="ml-3">
-                            <span class="underline">
-                                Django
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                Bootstrap
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                Python
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                SQLite
-                            </span>
-                        </li>
-                    </ul> -->
-
           <ul class="tag-list justify-content-start mt-3 mb-3">
             <li class="ml-3">Django</li>
             <li class="ml-3">Bootstrap</li>
@@ -262,7 +260,7 @@
               googleAnalytics.sendAnalyticEvent(
                 'click_button',
                 'projects',
-                'link-button-3'
+                'link-button-4'
               )
             "
             href="https://django-blog-oclq.onrender.com/"
@@ -292,7 +290,7 @@
     <div class="d-none d-lg-block col-lg-6">
       <img
         src="./assets/space-invader.png"
-        alt="project-image-4"
+        alt="project-image-5"
         class="project-image"
       />
     </div>
@@ -313,19 +311,6 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-6 offset-lg-6 p-0">
-          <!-- <ul class="project-skills justify-content-lg-end">
-                        <li class="ml-3">
-                            <span class="underline">
-                                Python
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline rounded-full">
-                                Pygame
-                            </span>
-                        </li>
-                    </ul> -->
-
           <ul class="tag-list justify-content-lg-end mt-3 mb-3">
             <li class="ml-3">Python</li>
             <li class="ml-3">Pygame</li>
@@ -363,36 +348,13 @@
     <div class="d-none d-lg-block col-lg-6">
       <img
         src="./assets/tic-tac-toe.png"
-        alt="project-image-1"
+        alt="project-image-5"
         class="project-image"
       />
     </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-lg-6 p-0">
-          <!-- <ul class="project-skills justify-content-start">
-                        <li class="ml-3">
-                            <span class="underline">
-                                Angular
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                Bootstrap
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                HTML
-                            </span>
-                        </li>
-                        <li class="ml-3">
-                            <span class="underline">
-                                CSS
-                            </span>
-                        </li>
-                    </ul> -->
-
           <ul class="tag-list justify-content-start mt-3 mb-3">
             <li class="ml-3">Angular</li>
             <li class="ml-3">BootStrap</li>
