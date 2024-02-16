@@ -62,3 +62,11 @@
 .tag-list li {
   flex-wrap: wrap;
 }
+
+i {
+  color: var(--text-color);
+}
+
+i:hover {
+  color: var(--accent-color);
+}

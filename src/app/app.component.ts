@@ -37,7 +37,12 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    AOS.init();
+    AOS.init({
+      offset: 350,
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
   }
 
   handleRouteEvents() {
@@ -49,14 +54,19 @@ export class AppComponent implements OnInit {
         ).join('-');
         this.titleService.setTitle(title);
 
-        console.log(`page_title - ${title} :: page_path - ${event.urlAfterRedirects} :: page_location - ${this.document.location.href}`);
+        console.log(
+          `page_title - ${title} :: page_path - ${event.urlAfterRedirects} :: page_location - ${this.document.location.href}`
+        );
         // gtag('event', 'page_view', {
         //   page_title: title,
         //   page_path: event.urlAfterRedirects,
         //   page_location: this.document.location.href,
         // });
 
-        this.googleAnalytics.sendAnalyticPageView(event.urlAfterRedirects, title);
+        this.googleAnalytics.sendAnalyticPageView(
+          event.urlAfterRedirects,
+          title
+        );
       }
     });
   }

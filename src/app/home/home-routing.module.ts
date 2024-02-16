@@ -9,22 +9,24 @@ import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 
 const routes: Routes = [
-
   { path: '', component: BannerComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'education', component: EducationComponent }
-
+  { path: 'education', component: EducationComponent },
 ];
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled',
+      onSameUrlNavigation: 'reload',
+      scrollPositionRestoration: 'enabled',
+    }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}

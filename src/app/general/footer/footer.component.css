@@ -45,16 +45,14 @@
 
 .footer-right-bar a {
   font-size: 0.75rem;
-  -webkit-letter-spacing: 0.1em;
-  -moz-letter-spacing: 0.1em;
-  -ms-letter-spacing: 0.1em;
   letter-spacing: 0.1em;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  margin: 1.25rem auto;
-  padding: 0.625rem;
+  /* margin: 1.25rem auto;
+  padding: 0.625rem; */
+  padding-inline: 1rem;
   color: var(--text-color);
+  /* left: 0.625rem; */
+  position: relative;
 }
 
 .footer-right-bar a:hover,
@@ -90,6 +88,10 @@
   color: var(--text-color);
 }
 
+a {
+  color: var(--text-color);
+}
+
 .footer-credits a:hover,
 .footer-credits a:focus-visible {
   color: var(--accent-color);
@@ -97,4 +99,18 @@
 
 i:hover {
   color: var(--accent-color) !important;
+}
+
+/* Vendor prefixes for specific properties */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .footer-right-bar a {
+    -webkit-writing-mode: vertical-rl;
+  }
+}
+
+/* IE specific prefix */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .footer-right-bar a {
+    -ms-writing-mode: tb-rl;
+  }
 }
