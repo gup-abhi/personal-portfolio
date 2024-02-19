@@ -11,7 +11,7 @@ import { EducationComponent } from './education/education.component';
 const routes: Routes = [
   { path: '', component: BannerComponent },
   { path: 'experience', component: ExperienceComponent },
-  { path: 'about-me', component: AboutMeComponent },
+  { path: 'about', component: AboutMeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'education', component: EducationComponent },

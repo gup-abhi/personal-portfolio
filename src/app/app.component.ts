@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
           this.router.routerState,
           this.router.routerState.root
         ).join('-');
-        this.titleService.setTitle(title);
+        // this.titleService.setTitle(title);
 
         console.log(
           `page_title - ${title} :: page_path - ${event.urlAfterRedirects} :: page_location - ${this.document.location.href}`

@@ -7,10 +7,20 @@ import { IntersectionObserverDirective } from './directive/intersection-observer
 import { InfiniteScrollDirective } from './directive/infinite-scroll.directive';
 
 @NgModule({
-  declarations: [EffectDirectiveDirective, TextLoopDirective, HeadingComponent, IntersectionObserverDirective, InfiniteScrollDirective],
-  imports: [
-    CommonModule
+  declarations: [
+    EffectDirectiveDirective,
+    TextLoopDirective,
+    HeadingComponent,
+    IntersectionObserverDirective,
+    InfiniteScrollDirective,
   ],
-  exports: [EffectDirectiveDirective, TextLoopDirective, HeadingComponent, IntersectionObserverDirective, InfiniteScrollDirective]
+  imports: [CommonModule],
+  exports: [
+    EffectDirectiveDirective,
+    TextLoopDirective,
+    HeadingComponent,
+    IntersectionObserverDirective,
+    InfiniteScrollDirective,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}
