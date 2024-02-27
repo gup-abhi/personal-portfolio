@@ -1,9 +1,19 @@
 :host {
-    display: block;
-    min-height: 100vh;
+  display: block;
+  min-height: 100vh;
 }
 
 .page-content {
-    /* padding: 1.25rem; */
-    min-height: calc(100vh - 8rem);
+  position: relative; /* Add this line to make sure particles-js is positioned relative to it */
+  /* padding: 1.25rem; */
+  min-height: calc(100vh - 8rem);
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Change height to 100% */
+  z-index: -1; /* Ensure particles are behind other content */
 }
