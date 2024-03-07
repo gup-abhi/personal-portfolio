@@ -4,9 +4,9 @@
 }
 
 .page-content {
-  position: relative; /* Add this line to make sure particles-js is positioned relative to it */
-  /* padding: 1.25rem; */
+  position: relative;
   min-height: calc(100vh - 8rem);
+  overflow: hidden; /* Add this to prevent particles overflow */
 }
 
 #particles-js {
@@ -15,5 +15,5 @@
   left: 0;
   width: 100%;
   height: 100%; /* Change height to 100% */
-  z-index: -1; /* Ensure particles are behind other content */
+  z-index: -1;
 }
